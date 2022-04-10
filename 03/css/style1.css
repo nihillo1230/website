@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+    
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+img{
+    border: 0;
+    vertical-align: top;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+body{
+    color: #333333;
+}
+.wrap{
+    width: 1000px;
+
+}
+/* layout */
+header{
+    width: 200px;
+    height: 650px;
+    background: #aaa;
+    position: relative;
+    float: left;
+    z-index: 100;
+}
+
+header h1{
+    width: 200px;
+    padding: 30px 0;
+}
+header h1 a img{
+    width: 180px;
+    height: 40px;
+}
+
+header nav{
+    width: 180px;
+    text-align: center;
+    margin: 0 auto;
+}
+header nav ul.gnb{
+    width: 100%;
+
+}
+header nav ul.gnb>li{
+    width: 100%;
+    position: relative;
+    
+}
+header nav ul.gnb>li>a{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    font-size: 22px;
+    background: #3d0905;
+    color: #fff;
+}
+header nav ul.gnb>li:hover>a{
+    background: #4b3713;
+    color: #fcf80b;
+}
+
+header nav ul.gnb>li>ul.sub{
+    width: 100%;
+    background: #74150e;
+    color: #fff;
+    position: absolute;
+    left: 180px;
+    top: 0px;
+    height: 120px;
+    display: none;
+}
+header nav ul.gnb>li>ul.sub>li{
+    width: 100%;
+
+}
+header nav ul.gnb>li>ul.sub>li>a{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    font-size: 18px;
+}
+header nav ul.gnb>li>ul.sub>li:hover>a{
+    background: #cc721e;
+    color: #fcf80b;
+}
+
+
+
+
+
+
+
+
+.r_con{
+    width: 800px;
+    height: 650px;
+    float: left;
+}
+
+.r_con .slide{
+    width: 100%;
+    height: 350px;
+    background: #bbb;
+    position: relative;
+   
+}
+.r_con .slide li{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.r_con .slide li a img{
+    width: 800px;
+    height: 350px;
+}
+
+
+
+.r_con .contents{
+    width: 100%;
+    height: 200px;
+    background: #ccc;
+}
+.r_con footer{
+    width: 100%;
+    height: 100px;
+    background: #ddd;
+}
