@@ -49,10 +49,7 @@ $(document).ready(function(){
         $(".modal").hide();
     });
 
-    $("footer .fam p").click(function(){
-        $(this).toggleClass("on");
-        $("footer .fam ul").stop().slideToggle();
-    });
+    
 
 
 
